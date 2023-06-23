@@ -1,12 +1,16 @@
-import './Styles.css';
+import './assets/LandingSection.css';
 
 const LandingSection = () => {
 	return (
-		<section id="Landing">
-			<div>
-				<h1>Hello, I'm Pasha Loguinov</h1>
+		<div id="grain" className="grain-container Landing bg-red">
+			<div id="container">
+				<div className="contents">
+					<h1 id="title" className="text-white">
+						Hello, I'm Pasha Loguinov
+					</h1>
+				</div>
 			</div>
-		</section>
+		</div>
 	);
 };
 

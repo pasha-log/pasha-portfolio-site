@@ -1,8 +1,6 @@
-import './Styles.css';
-
 const ProjectsSection = () => {
 	return (
-		<section id="Projects">
+		<section className="bg-red text-white" id="Projects">
 			<h1>02. Some Things I've Built</h1>
 			<div id="p1" />
 			<div id="p2" />

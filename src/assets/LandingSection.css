@@ -1,0 +1,129 @@
+:root {
+	--fs-xl: clamp(1rem, 12vw + 1rem, 4rem);
+	--fs-600: 2rem;
+	--fs-400: 1rem;
+}
+
+@media (max-width: 70em) {
+	:root {
+		--fs-xl: 1.25rem;
+		--fs-600: 3rem;
+		--fs-400: 1.125rem;
+	}
+}
+
+@media (max-width: 40em) {
+	:root {
+		--fs-xl: 1rem;
+		--fs-600: 1.5rem;
+		--fs-400: .5rem;
+	}
+}
+
+.grain-container {
+	background-color: rgb(176, 0, 0);
+	background-image: radial-gradient(at 37% 28%, rgb(0, 0, 0) 0px, transparent 50%),
+		radial-gradient(at 32% 7%, rgb(0, 0, 0) 0px, transparent 50%),
+		radial-gradient(at 80% 7%, rgb(0, 0, 0) 0px, transparent 50%),
+		radial-gradient(at 70% 7%, rgb(0, 0, 0) 0px, transparent 50%),
+		radial-gradient(at 99% 3%, rgb(0, 0, 0) 0px, transparent 50%),
+		radial-gradient(closest-corner at 70% 63%, rgb(0, 0, 0) 0px, transparent 50%),
+		radial-gradient(closest-corner at 64% 80%, rgb(0, 0, 0) 0px, transparent 50%);
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.contents {
+	margin-top: 10rem;
+	display: grid;
+	place-content: center;
+	text-align: center;
+}
+
+#title {
+	font-size: var(--fs-xl);
+	position: relative;
+	width: max-content;
+}
+
+#title::before,
+#title::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#title::before {
+	background: black;
+	height: 1.3em;
+	animation: typewriter 6s steps(25) 1s forwards;
+}
+
+#title::after {
+	width: 1em;
+	height: 1.3em;
+	background-color: white;
+	animation: typewriter 6s steps(25) 1s forwards, blink 750ms steps(25) infinite;
+}
+
+@keyframes typewriter {
+	to {
+		left: 100%;
+	}
+}
+
+@keyframes blink {
+	to {
+		background: transparent;
+	}
+}
+/* .grain-container:after {
+	animation: grain 8s steps(10) infinite;
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png);
+	content: "";
+	opacity: 0.35;
+	position: fixed;
+	top: -110%;
+	left: -50%;
+	height: 300%;
+	width: 300%;
+	
+} */
+
+/* @keyframes grain {
+	0%,
+	100% {
+		transform: translate(0, 0);
+	}
+	10% {
+		transform: translate(-5%, -10%);
+	}
+	20% {
+		transform: translate(-15%, 5%);
+	}
+	30% {
+		transform: translate(7%, -25%);
+	}
+	40% {
+		transform: translate(-5%, 25%);
+	}
+	50% {
+		transform: translate(-15%, 10%);
+	}
+	60% {
+		transform: translate(15%, 0%);
+	}
+	70% {
+		transform: translate(0%, 15%);
+	}
+	80% {
+		transform: translate(3%, 35%);
+	}
+	90% {
+		transform: translate(-10%, 10%);
+	}
+} */
