@@ -23,7 +23,10 @@ module.exports = {
 				menuopen: "url('/src/assets/icon-hamburger.svg')",
 				menuclose: "url('/src/assets/icon-hamburger-close.svg')",
 				github: "url('/src/assets/github-mark.svg')",
-				link: "url('/src/assets/link.svg')"
+				link: "url('/src/assets/link.svg')",
+				linkedin: "url('/src/assets/linkedin.svg')",
+				youtube: "url('/src/assets/youtube.svg')",
+				instagram: "url('/src/assets/instagram.svg')"
 			}
 		}
 	},

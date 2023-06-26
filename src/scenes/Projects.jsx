@@ -1,4 +1,4 @@
-const ProjectsSection = () => {
+const Projects = () => {
 	return (
 		<section className="bg-red text-white" id="02 projects">
 			<h1 className="pt-4">02. Some Things I've Built</h1>
@@ -7,11 +7,11 @@ const ProjectsSection = () => {
 				<div className="grid grid-cols-1 md:grid-cols-2 md:p-10 items-center">
 					<div
 						id="p1"
-						className="bg-instapost w-0 h-0 md:w-full md:h-80 bg-center bg-contain bg-no-repeat md:pt-8 md:pb-20"
+						className="bg-instapost w-0 h-0 md:w-full md:h-full bg-center bg-contain bg-no-repeat md:pt-8 md:pb-20"
 					/>
 					<div className="md:pt-8 md:pb-20 bg-black rounded m-2">
 						<div className="flex md:flex-row justify-center pt-4 px-4 md:px-0">
-							<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold">
+							<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold mr-2">
 								Instapost (An Instagram Mock)
 							</h2>
 							<a href="https://github.com/pasha-log/capstone2-frontend">
@@ -29,18 +29,18 @@ const ProjectsSection = () => {
 							comment on photos. Users can search for other users and follow them, and stay up to date
 							with posts that their friends have created.
 						</p>
-						<ul className="flex flex-wrap items-stretch text-justify text-sm px-3">
-							<li>JavaScript</li>
-							<li>Node</li>
-							<li>Express</li>
-							<li>Postgresql</li>
-							<li>React</li>
-							<li>Reactstrap</li>
-							<li>React Hook Form</li>
-							<li>React Easy Crop</li>
-							<li>Material UI</li>
-							<li>Amazon S3</li>
-							<li>Heroku</li>
+						<ul className="flex flex-wrap items-center justify-center text-sm px-3">
+							<li className="mr-4">JavaScript</li>
+							<li className="mr-4">Node</li>
+							<li className="mr-4">Express</li>
+							<li className="mr-4">Postgresql</li>
+							<li className="mr-4">React</li>
+							<li className="mr-4">Reactstrap</li>
+							<li className="mr-4">React Hook Form</li>
+							<li className="mr-4">React Easy Crop</li>
+							<li className="mr-4">Material UI</li>
+							<li className="mr-4">Amazon S3</li>
+							<li className="mr-4">Heroku</li>
 						</ul>
 					</div>
 				</div>
@@ -48,7 +48,7 @@ const ProjectsSection = () => {
 				<div className="grid grid-cols-1 md:grid-cols-2 md:p-10 items-center">
 					<div className="md:pt-8 md:pb-20 bg-black rounded m-2">
 						<div className="flex md:flex-row justify-center pt-4 px-4 md:px-0">
-							<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold">
+							<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold mr-2">
 								Jobly (Job Search Site)
 							</h2>
 							<a href="https://github.com/pasha-log/react-jobly-frontend">
@@ -69,31 +69,31 @@ const ProjectsSection = () => {
 							different mock companies and jobs based on certain criteria, and "apply" to those jobs with
 							the click of a button.
 						</p>
-						<ul className="flex flex-wrap items-stretch text-justify text-sm px-3">
-							<li>JavaScript</li>
-							<li>Node</li>
-							<li>Express</li>
-							<li>Postgresql</li>
-							<li>React</li>
-							<li>Reactstrap</li>
-							<li>React Hook Form</li>
-							<li>Heroku</li>
+						<ul className="flex flex-wrap items-center justify-center text-sm px-3">
+							<li className="mr-4">JavaScript</li>
+							<li className="mr-4">Node</li>
+							<li className="mr-4">Express</li>
+							<li className="mr-4">Postgresql</li>
+							<li className="mr-4">React</li>
+							<li className="mr-4">Reactstrap</li>
+							<li className="mr-4">React Hook Form</li>
+							<li className="mr-4">Heroku</li>
 						</ul>
 					</div>
 					<div
 						id="p2"
-						className="bg-jobly w-0 h-0 md:w-full md:h-80 bg-center bg-contain bg-no-repeat md:pt-8 md:pb-20"
+						className="bg-jobly w-0 h-0 md:w-full md:h-full bg-center bg-contain bg-no-repeat md:pt-8 md:pb-20"
 					/>
 				</div>
 				{/** LIGHTS OUT */}
 				<div className="grid grid-cols-1 md:grid-cols-2 md:p-10 items-center">
 					<div
 						id="p3"
-						className="bg-lightsout w-0 h-0 md:w-full md:h-80 bg-center bg-contain bg-no-repeat md:pt-8 md:pb-20"
+						className="bg-lightsout w-0 h-0 md:w-full md:h-full bg-center bg-contain bg-no-repeat md:pt-8 md:pb-20"
 					/>
 					<div className="md:pt-8 md:pb-20 bg-black rounded m-2">
 						<div className="flex md:flex-row justify-center pt-4 px-4 md:px-0">
-							<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold">Lights Out Game</h2>
+							<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold mr-2">Lights Out Game</h2>
 							<a href="https://github.com/pasha-log/react-lights-out">
 								<div className="p-2 bg-github w-10 md:w-11 h-10 md:h-11 bg-no-repeat bg-contain" />
 							</a>
@@ -105,10 +105,10 @@ const ProjectsSection = () => {
 							A fun, but tricky game. On each render, the board has a random assortment of lit and unlit
 							cells. The player's objective is to successfully turn off all the lit cells.
 						</p>
-						<ul className="flex flex-wrap items-stretch text-justify text-sm px-3">
-							<li>GitHub Pages</li>
-							<li>React</li>
-							<li>JavaScript</li>
+						<ul className="flex flex-wrap items-center justify-center text-sm px-3">
+							<li className="mr-4">GitHub Pages</li>
+							<li className="mr-4">React</li>
+							<li className="mr-4">JavaScript</li>
 						</ul>
 					</div>
 				</div>
@@ -116,7 +116,7 @@ const ProjectsSection = () => {
 				<div className="grid grid-cols-1 md:grid-cols-2 md:p-10 items-center">
 					<div className="md:pt-8 md:pb-20 bg-black rounded m-2">
 						<div className="flex md:flex-row justify-center pt-4 px-4 md:px-0">
-							<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold">
+							<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold mr-2">
 								Carbon Footprint Calculator
 							</h2>
 							<a href="https://github.com/pasha-log/capstone1">
@@ -134,20 +134,20 @@ const ProjectsSection = () => {
 							and electricity carbon footprint estimates are calculated through Carbon Interface with
 							Python requests.
 						</p>
-						<ul className="flex flex-wrap items-stretch text-justify text-sm px-3">
-							<li>jQuery</li>
-							<li>Python</li>
-							<li>Flask</li>
-							<li>Postgresql</li>
-							<li>SQLAlchemy</li>
-							<li>Chart.js</li>
-							<li>WTForms</li>
-							<li>Heroku</li>
+						<ul className="flex flex-wrap items-center justify-center text-sm px-3">
+							<li className="mr-4">jQuery</li>
+							<li className="mr-4">Python</li>
+							<li className="mr-4">Flask</li>
+							<li className="mr-4">Postgresql</li>
+							<li className="mr-4">SQLAlchemy</li>
+							<li className="mr-4">Chart.js</li>
+							<li className="mr-4">WTForms</li>
+							<li className="mr-4">Heroku</li>
 						</ul>
 					</div>
 					<div
 						id="p4"
-						className="bg-carbonprint w-0 h-0 md:w-full md:h-80 bg-center bg-contain bg-no-repeat md:pt-8 md:pb-20"
+						className="bg-carbonprint w-0 h-0 md:w-full md:h-full bg-center bg-contain bg-no-repeat md:pt-8 md:pb-20"
 					/>
 				</div>
 			</div>
@@ -155,4 +155,4 @@ const ProjectsSection = () => {
 	);
 };
 
-export default ProjectsSection;
+export default Projects;

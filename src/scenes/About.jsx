@@ -1,6 +1,6 @@
-import './AboutSection.css';
+import '../assets/About.css';
 
-const AboutSection = () => {
+const About = () => {
 	return (
 		<section className="bg-black text-white h-auto" id="01 about">
 			<h1 className="pt-4">01. About me.</h1>
@@ -12,6 +12,7 @@ const AboutSection = () => {
 						height="340"
 						className="h-340 w-full object-cover md:h-full md:w-480"
 						allowFullScreen
+						title="skull-crush"
 					/>
 				</div>
 				<div className="p-8">
@@ -25,24 +26,19 @@ const AboutSection = () => {
 						and healthy postive work environment. Here are a few of the technologies I've been working with
 						recently:
 					</p>
-					<div className="two">
-						<div className="">
-							<ul id="tech">
-								<li>JavaScript (ES6+)</li>
-								<li>Node</li>
-								<li>Express</li>
-								<li>Postgresql</li>
-							</ul>
-						</div>
-					</div>
-					<div>
-						<div className="">
-							<ul id="tech">
-								<li>Tailwind CSS</li>
-								<li>Framer Motion</li>
-								<li>React</li>
-							</ul>
-						</div>
+					<div className="grid grid-cols-1 md:grid-cols-2">
+						<ul id="tech">
+							<li>JavaScript (ES6+)</li>
+							<li>Node</li>
+							<li>Express</li>
+							<li>Postgresql</li>
+						</ul>
+
+						<ul id="tech">
+							<li>Tailwind CSS</li>
+							<li>Framer Motion</li>
+							<li>React</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -50,4 +46,4 @@ const AboutSection = () => {
 	);
 };
 
-export default AboutSection;
+export default About;

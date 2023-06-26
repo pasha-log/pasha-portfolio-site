@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useMediaQuery from '../hooks/useMediaQuery';
-import '../assets/Navbar.css';
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
 	const lowerCasePage = page.toLowerCase();
@@ -18,7 +17,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 	);
 };
 
-const Navbar2 = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
+const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 	const [ isMenuToggled, setIsMenuToggled ] = useState(false);
 	const isAboveSmallScreens = useMediaQuery('(min-width: 768px)');
 	// const navbarBackground = isTopOfPage ? '' : 'bg-red';
@@ -70,4 +69,4 @@ const Navbar2 = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 	);
 };
 
-export default Navbar2;
+export default Navbar;
