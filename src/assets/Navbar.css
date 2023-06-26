@@ -54,7 +54,7 @@ body {
 
 .primary-navigation a:hover {
 	text-decoration: none;
-	color: white;
+	color: rgba(255, 255, 255, 0.685);
 }
 
 .primary-navigation a > [aria-hidden="true"] {
@@ -115,3 +115,13 @@ body {
 		padding-inline: clamp(3rem, 8vw, 10rem);
 	}
 }
+
+/* .menuopen {
+	background: url(./icon-hamburger.svg) no-repeat center;
+	filter: invert(93%) sepia(100%) saturate(33%) hue-rotate(199deg) brightness(106%) contrast(99%);
+}
+
+.menuclose {
+	background-image: url(./icon-hamburger-close.svg) no-repeat center;
+	filter: invert(93%) sepia(100%) saturate(33%) hue-rotate(199deg) brightness(106%) contrast(99%);
+} */
