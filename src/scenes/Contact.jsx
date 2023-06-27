@@ -1,7 +1,9 @@
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
+import useNav from '../hooks/useNav';
 
 const Contact = () => {
+	const contactRef = useNav('03 Contact');
 	const { register, trigger, formState: { errors } } = useForm();
 
 	const onSubmit = async (e) => {
@@ -13,7 +15,7 @@ const Contact = () => {
 	};
 
 	return (
-		<section id="03 contact" className="contact py-24 bg-black px-8">
+		<section ref={contactRef} id="03 contact" className="contact py-24 bg-black px-8">
 			{/* HEADINGS */}
 			<motion.div
 				initial="hidden"
@@ -70,7 +72,7 @@ const Contact = () => {
 					<form
 						target="_blank"
 						onSubmit={onSubmit}
-						action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
+						action="https://formsubmit.co/51c68da1c702e6b01fa9cf69c0949cd7"
 						method="POST"
 					>
 						<input

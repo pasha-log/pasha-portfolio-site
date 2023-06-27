@@ -1,7 +1,11 @@
+import useNav from '../hooks/useNav';
+
 const Projects = () => {
+	const projectsRef = useNav('02 Projects');
+
 	return (
-		<section className="bg-red text-white" id="02 projects">
-			<h1 className="pt-4">02. Some Things I've Built</h1>
+		<section ref={projectsRef} className="bg-red text-white" id="02 projects">
+			<h1 className="py-4 text-4xl">02. Some Things I've Built</h1>
 			<div className="grid grid-cols-1 md:p-10">
 				{/** INSTAPOST */}
 				<div className="grid grid-cols-1 md:grid-cols-2 md:p-10 items-center">

@@ -1,9 +1,12 @@
 import '../assets/About.css';
+import useNav from '../hooks/useNav';
 
 const About = () => {
+	const aboutRef = useNav('01 About');
+
 	return (
-		<section className="bg-black text-white h-auto" id="01 about">
-			<h1 className="pt-4">01. About me.</h1>
+		<section ref={aboutRef} className="bg-black text-white h-auto py-12" id="01 about">
+			<h1 className="py-4 text-4xl">01. About me.</h1>
 			<div className="grid grid-cols-1 md:grid-cols-2">
 				<div className="md:shrink-0">
 					<iframe
@@ -26,7 +29,7 @@ const About = () => {
 						and healthy postive work environment. Here are a few of the technologies I've been working with
 						recently:
 					</p>
-					<div className="grid grid-cols-1 md:grid-cols-2">
+					<div className="grid grid-cols-1 md:grid-cols-2 py-8">
 						<ul id="tech">
 							<li>JavaScript (ES6+)</li>
 							<li>Node</li>
@@ -38,6 +41,7 @@ const About = () => {
 							<li>Tailwind CSS</li>
 							<li>Framer Motion</li>
 							<li>React</li>
+							<li>Typescript</li>
 						</ul>
 					</div>
 				</div>

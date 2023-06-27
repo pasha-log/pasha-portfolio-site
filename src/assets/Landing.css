@@ -37,15 +37,15 @@
 
 #title::before {
 	background: black;
-	height: 1.3em;
-	animation: typewriter 6s steps(25) 1s forwards;
+	height: 1.4em;
+	animation: typewriter 4s steps(25) 1s forwards;
 }
 
 #title::after {
 	width: 1em;
 	height: 1.3em;
 	background-color: white;
-	animation: typewriter 6s steps(25) 1s forwards, blink 750ms steps(25) infinite;
+	animation: typewriter 4s steps(25) 1s forwards, blink 750ms steps(25) infinite;
 }
 
 @keyframes typewriter {

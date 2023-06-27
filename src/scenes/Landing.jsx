@@ -1,19 +1,18 @@
 import '../assets/Landing.css';
-// import useMediaQuery from '../hooks/useMediaQuery';
-// import { motion } from 'framer-motion';
-// import AnchorLink from 'react-anchor-link-smooth-scroll';
+import SocialMediaIcons from '../components/SocialMediaIcons';
+import useNav from '../hooks/useNav';
 
 const Landing = () => {
-	// const Landing = ({ setSelectedPage }) => {
-	// const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
+	const homeRef = useNav('00 Home');
 
 	return (
-		<div id="00 home" className="grain-container Landing bg-red">
+		<div ref={homeRef} id="00 home" className="grain-container Landing bg-red">
 			<div id="container">
 				<div className="contents">
 					<h1 id="title" className="text-lg md:text-6xl  text-white ">
 						Hello, I'm Pasha Loguinov
 					</h1>
+					<SocialMediaIcons position={'justify-center'} />
 				</div>
 			</div>
 		</div>

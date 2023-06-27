@@ -1,26 +1,33 @@
 import { useState } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useMediaQuery from '../hooks/useMediaQuery';
+import { useContext } from 'react';
+import { NavContext } from '../context/NavContext';
 
-const Link = ({ page, selectedPage, setSelectedPage }) => {
-	const lowerCasePage = page.toLowerCase();
-	return (
-		<AnchorLink
-			className={`${selectedPage === lowerCasePage
-				? 'text-white'
-				: 'text-red'} hover:text-white transition duration-500 no-underline`}
-			href={`#${lowerCasePage}`}
-			onClick={() => setSelectedPage(lowerCasePage)}
-		>
-			{page}
-		</AnchorLink>
-	);
-};
+const Navbar = () => {
+	const { activeLinkId } = useContext(NavContext);
+	console.log(activeLinkId);
+	const navLinks = [ '00 Home', '01 About', '02 Projects', '03 Contact' ];
 
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
+	const renderNavLink = (content) => {
+		const scrollToId = `${content.toLowerCase()}`;
+
+		const handleClickNav = () => {
+			document.getElementById(scrollToId).scrollIntoView({ behavior: 'smooth' });
+		};
+
+		return (
+			<button
+				className={`bg-black hover:text-white transition duration-500 ${activeLinkId === content
+					? 'text-white'
+					: 'text-red'}`}
+				onClick={handleClickNav}
+			>
+				{content}
+			</button>
+		);
+	};
 	const [ isMenuToggled, setIsMenuToggled ] = useState(false);
 	const isAboveSmallScreens = useMediaQuery('(min-width: 768px)');
-	// const navbarBackground = isTopOfPage ? '' : 'bg-red';
 
 	return (
 		<nav className={`bg-black z-40 w-full fixed top-0 py-6`}>
@@ -30,11 +37,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
 				{/** DESKTOP NAV */}
 				{isAboveSmallScreens ? (
-					<div className="flex justfiy-between gap-16 text-sm font-semibold">
-						<Link page="00 Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-						<Link page="01 About" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-						<Link page="02 Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-						<Link page="03 Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+					<div className="flex justfiy-between items-center gap-16 text-sm font-semibold">
+						{navLinks.map((nav) => renderNavLink(nav))}
+						<a
+							href="https://drive.google.com/file/d/18Yg-xQuzpUBNR953bKEzgcV6Svv8CEuC/view?usp=sharing"
+							className="p-1 bg-red font-semibold text-white hover:bg-black hover:text-white transition duration-500 no-underline"
+						>
+							RESUME
+						</a>
 					</div>
 				) : (
 					<button
@@ -56,11 +66,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 						</div>
 
 						{/** MENU ITEMS */}
-						<div className="flex flex-col gap-10 ml-[33%] text=2xl text-red">
-							<Link page="00 Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-							<Link page="01 About" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-							<Link page="02 Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-							<Link page="03 Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+						<div className="flex flex-col gap-10 ml-[10%] text=2xl text-red">
+							{navLinks.map((nav) => renderNavLink(nav))}
+							<a
+								href="https://drive.google.com/file/d/18Yg-xQuzpUBNR953bKEzgcV6Svv8CEuC/view?usp=sharing"
+								className="p-1 w-28 place-self-center bg-red font-semibold text-white hover:bg-black hover:text-white transition duration-500 no-underline"
+							>
+								RESUME
+							</a>
 						</div>
 					</div>
 				)}
