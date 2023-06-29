@@ -40,7 +40,7 @@ const Projects = () => {
 							id="p1"
 							className="bg-instapost w-0 h-0 md:w-full md:h-full bg-center bg-contain bg-no-repeat md:pt-8 md:pb-20"
 						/>
-						<div className="md:pt-8 md:pb-20 bg-black rounded m-2">
+						<div className="pb-8 md:pt-8 md:pb-20 bg-black rounded m-2">
 							<div className="flex md:flex-row justify-center pt-4 px-4 md:px-0">
 								<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold mr-2">
 									Instapost (An Instagram Mock)
@@ -56,7 +56,7 @@ const Projects = () => {
 								This application is a responsive React front end for my{' '}
 								<a
 									href="https://github.com/pasha-log/capstone2-backend"
-									className="text-red no-underline"
+									className="text-red hover:text-white no-underline"
 								>
 									Instapost API
 								</a>, which works together to create a social media website where users can share, like,
@@ -93,7 +93,7 @@ const Projects = () => {
 					}}
 				>
 					<div className="grid grid-cols-1 md:grid-cols-2 md:p-10 items-center">
-						<div className="md:pt-8 md:pb-20 bg-black rounded m-2">
+						<div className="pb-8 md:pt-8 md:pb-20 bg-black rounded m-2">
 							<div className="flex md:flex-row justify-center pt-4 px-4 md:px-0">
 								<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold mr-2">
 									Jobly (Job Search Site)
@@ -109,7 +109,7 @@ const Projects = () => {
 								This application is a responsive React front end for my{' '}
 								<a
 									href="https://github.com/pasha-log/react-jobly-backend"
-									className="text-red no-underline"
+									className="text-red hover:text-white no-underline"
 								>
 									Jobly API
 								</a>, which works together to create a fake job search site. Users can search and view
@@ -151,7 +151,7 @@ const Projects = () => {
 							id="p3"
 							className="bg-lightsout w-0 h-0 md:w-full md:h-full bg-center bg-contain bg-no-repeat md:pt-8 md:pb-20"
 						/>
-						<div className="md:pt-8 md:pb-20 bg-black rounded m-2">
+						<div className="pb-8 md:pt-8 md:pb-20 bg-black rounded m-2">
 							<div className="flex md:flex-row justify-center pt-4 px-4 md:px-0">
 								<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold mr-2">
 									Lights Out Game
@@ -165,7 +165,9 @@ const Projects = () => {
 							</div>
 							<p className="mt-2 text-justify w-auto bg-black p-4 rounded">
 								A fun, but tricky game. On each render, the board has a random assortment of lit and
-								unlit cells. The player's objective is to successfully turn off all the lit cells.
+								unlit cells. The player's objective is to successfully turn off all the lit cells. The
+								catch is that unlighting one cell will flip the adjacent cells from top, bottom, left,
+								right directions.
 							</p>
 							<ul className="flex flex-wrap items-center justify-center text-sm px-3">
 								<li className="mr-4">GitHub Pages</li>
@@ -189,7 +191,7 @@ const Projects = () => {
 					}}
 				>
 					<div className="grid grid-cols-1 md:grid-cols-2 md:p-10 items-center">
-						<div className="md:pt-8 md:pb-20 bg-black rounded m-2">
+						<div className="pb-8 md:pt-8 md:pb-20 bg-black rounded m-2">
 							<div className="flex md:flex-row justify-center pt-4 px-4 md:px-0">
 								<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold mr-2">
 									Carbon Footprint Calculator
@@ -207,7 +209,11 @@ const Projects = () => {
 								database, and with Chart.js users can see the emissions they've created over time
 								driving in their vehicles, creating a visual element to the emissions we make on a daily
 								basis. The vehicle, shipping, and electricity carbon footprint estimates are calculated
-								through Carbon Interface with Python requests.
+								through{' '}
+								<a className="text-red hover:text-white" href="https://docs.carboninterface.com/#/">
+									Carbon Interface API
+								</a>{' '}
+								with Flask requests.
 							</p>
 							<ul className="flex flex-wrap items-center justify-center text-sm px-3">
 								<li className="mr-4">jQuery</li>

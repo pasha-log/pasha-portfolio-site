@@ -1,4 +1,4 @@
-.grain-container {
+/* .grain-container {
 	background-color: rgb(176, 0, 0);
 	background-image: radial-gradient(at 37% 28%, rgb(0, 0, 0) 0px, transparent 50%),
 		radial-gradient(at 32% 7%, rgb(0, 0, 0) 0px, transparent 50%),
@@ -10,14 +10,7 @@
 	height: 100vh;
 	width: 100vw;
 	overflow: hidden;
-}
-
-.contents {
-	margin-top: 10rem;
-	display: grid;
-	place-content: center;
-	text-align: center;
-}
+} */
 
 #title {
 	/* font-size: var(--fs-xl); */

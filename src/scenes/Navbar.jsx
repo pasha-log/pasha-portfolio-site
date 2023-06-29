@@ -5,7 +5,7 @@ import { NavContext } from '../context/NavContext';
 
 const Navbar = () => {
 	const { activeLinkId } = useContext(NavContext);
-	console.log(activeLinkId);
+	// console.log(activeLinkId);
 	const navLinks = [ '00 Home', '01 About', '02 Projects', '03 Contact' ];
 
 	const renderNavLink = (content) => {

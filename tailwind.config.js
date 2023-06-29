@@ -26,7 +26,8 @@ module.exports = {
 				link: "url('/src/assets/link.svg')",
 				linkedin: "url('/src/assets/linkedin.svg')",
 				youtube: "url('/src/assets/youtube.svg')",
-				instagram: "url('/src/assets/instagram.svg')"
+				instagram: "url('/src/assets/instagram.svg')",
+				landingterminator: "url('/src/assets/pixel-terminator-1.png')"
 			}
 		}
 	},

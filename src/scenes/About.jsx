@@ -35,12 +35,20 @@ const About = () => {
 						<p className="mt-2 text-justify w-auto">
 							Hello! My name is Pasha, and I am a first generation Russian American graphic artist and web
 							developer who is clearly not obsessed with sci-fi. My interest in software engineering was
-							sparked in 2022 when I started <span className="text-red">Springboard's</span> coding
-							bootcamp. Turns out that building websites was my ideal way of combining my intellectual and
-							artistic interests. I'm currently based in{' '}
-							<span className="text-red">Pacific Grove, CA</span>, and searching for full-stack or
-							frontend roles. I hope to find myself in a fast-paced, ambitious, and healthy postive work
-							environment. Here are a few of the technologies I've been working with recently:
+							sparked in 2022 when I started{' '}
+							<a
+								href="https://pdf.credential.net/sfp1ddvq_1687981414273.pdf"
+								className="text-red hover:text-white"
+							>
+								Springboard's
+							</a>{' '}
+							coding bootcamp. Turns out that building websites was my ideal way of combining my
+							intellectual and artistic interests. I'm currently based in{' '}
+							<a href="https://www.cityofpacificgrove.org/" className="text-red hover:text-white">
+								Pacific Grove, CA
+							</a>, and searching for full-stack or frontend roles. I hope to find myself in a fast-paced,
+							ambitious, and healthy postive work environment. Here are a few of the technologies I've
+							been working with recently:
 						</p>
 						<div className="grid grid-cols-1 md:grid-cols-2 py-8">
 							<ul id="tech">
