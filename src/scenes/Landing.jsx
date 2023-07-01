@@ -8,7 +8,7 @@ const Landing = () => {
 
 	return (
 		<div ref={homeRef} id="00 home" className="grain-container bg-gradient-to-t from-red via-black to-black">
-			<div id="container" className="grid grid-cols-1 md:grid-cols-2 items-start">
+			<div id="container" className="grid grid-cols-1 md:grid-cols-2 items-center md:items-start">
 				<div className="mt-40 grid place-content-center text-center">
 					<h1 id="title" className="text-lg md:text-4xl md:mt-40 text-white ">
 						Hello, I'm Pasha Loguinov
@@ -42,8 +42,9 @@ const Landing = () => {
 						hidden: { opacity: 0, x: 50 },
 						visible: { opacity: 1, x: 0 }
 					}}
+					className="flex md:grid"
 				>
-					<div className="bg-landingterminator place-self-center w-[35rem] h-[24rem] bg-contain md:w-auto md:h-[35rem] md:place-self-auto md:mt-40 bg-center bg-no-repeat " />
+					<div className="flex bg-landingterminator place-self-center w-[35rem] h-[24rem] bg-contain md:w-auto md:h-[35rem] md:place-self-auto md:mt-40 bg-center bg-no-repeat " />
 				</motion.div>
 			</div>
 		</div>

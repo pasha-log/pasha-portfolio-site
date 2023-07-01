@@ -20,17 +20,8 @@ const About = () => {
 				}}
 			>
 				<h1 className="py-4 text-4xl">01. About me.</h1>
-				<div className="grid grid-cols-1 md:grid-cols-2">
-					<div className="md:shrink-0">
-						<iframe
-							src="https://giphy.com/embed/TFIhbHD5SIcfT2Eg4R"
-							width="480"
-							height="340"
-							className="h-340 w-full object-cover md:h-full md:w-480"
-							allowFullScreen
-							title="skull-crush"
-						/>
-					</div>
+				<div className="grid grid-cols-1 md:grid-cols-2 items-center">
+					<div className="bg-abouttable place-self-center w-[35rem] h-[24rem] bg-contain md:w-auto md:h-[35rem] md:place-self-auto bg-center bg-no-repeat " />
 					<div className="p-8">
 						<p className="mt-2 text-justify w-auto">
 							Hello! My name is Pasha, and I am a first generation Russian American graphic artist and web
@@ -52,17 +43,17 @@ const About = () => {
 						</p>
 						<div className="grid grid-cols-1 md:grid-cols-2 py-8">
 							<ul id="tech">
-								<li>JavaScript (ES6+)</li>
-								<li>Node</li>
-								<li>Express</li>
-								<li>Postgresql</li>
+								<li key="1">JavaScript (ES6+)</li>
+								<li key="2">Node</li>
+								<li key="3">Express</li>
+								<li key="4">Postgresql</li>
 							</ul>
 
 							<ul id="tech">
-								<li>Tailwind CSS</li>
-								<li>Framer Motion</li>
-								<li>React</li>
-								<li>Typescript</li>
+								<li key="5">Tailwind CSS</li>
+								<li key="6">Framer Motion</li>
+								<li key="7">React</li>
+								<li key="8">Typescript</li>
 							</ul>
 						</div>
 					</div>

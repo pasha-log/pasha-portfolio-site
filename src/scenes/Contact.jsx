@@ -30,7 +30,7 @@ const Contact = () => {
 			>
 				<div>
 					<p className="font-semibold text-4xl text-red">
-						<span className="text-white">CONTACT ME</span> IF YOU WANT TO LIVE
+						<span className="text-white">CONTACT ME</span> IF YOU WANT TO CODE
 					</p>
 				</div>
 			</motion.div>
@@ -52,10 +52,11 @@ const Contact = () => {
 						src="https://giphy.com/embed/xT0GqimU9dTwmE5lra"
 						width="480"
 						height="480"
-						class="giphy-embed"
+						className="giphy-embed"
 						allowFullScreen
 						title="explosion"
 					/>
+					{/* <div className="bg-arnold place-self-center w-[35rem] h-[24rem] bg-contain md:w-auto md:h-[35rem] md:place-self-auto bg-center bg-no-repeat " /> */}
 				</motion.div>
 
 				<motion.div

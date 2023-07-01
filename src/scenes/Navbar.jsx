@@ -17,6 +17,7 @@ const Navbar = () => {
 
 		return (
 			<button
+				key={content}
 				className={`bg-black hover:text-white transition duration-500 ${activeLinkId === content
 					? 'text-white'
 					: 'text-red'}`}
