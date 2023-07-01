@@ -37,8 +37,8 @@ const About = () => {
 							intellectual and artistic interests. I'm currently based in{' '}
 							<a href="https://www.cityofpacificgrove.org/" className="text-red hover:text-white">
 								Pacific Grove, CA
-							</a>, and searching for full-stack or frontend roles. I hope to find myself in a fast-paced,
-							ambitious, and healthy postive work environment. Here are a few of the technologies I've
+							</a>, and searching for full-stack or frontend roles. I hope to find myself in a creative,
+							ambitious, healthy, cooperative work environment. Here are a few of the technologies I've
 							been working with recently:
 						</p>
 						<div className="grid grid-cols-1 md:grid-cols-2 py-8">

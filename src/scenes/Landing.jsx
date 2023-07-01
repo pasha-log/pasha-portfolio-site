@@ -26,7 +26,7 @@ const Landing = () => {
 							visible: { opacity: 1, x: 0 }
 						}}
 					>
-						<SocialMediaIcons position={'justify-center'} />
+						<SocialMediaIcons />
 					</motion.div>
 				</div>
 				<motion.div

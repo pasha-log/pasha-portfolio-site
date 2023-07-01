@@ -1,19 +1,4 @@
-/* .grain-container {
-	background-color: rgb(176, 0, 0);
-	background-image: radial-gradient(at 37% 28%, rgb(0, 0, 0) 0px, transparent 50%),
-		radial-gradient(at 32% 7%, rgb(0, 0, 0) 0px, transparent 50%),
-		radial-gradient(at 80% 7%, rgb(0, 0, 0) 0px, transparent 50%),
-		radial-gradient(at 70% 7%, rgb(0, 0, 0) 0px, transparent 50%),
-		radial-gradient(at 99% 3%, rgb(0, 0, 0) 0px, transparent 50%),
-		radial-gradient(closest-corner at 70% 63%, rgb(0, 0, 0) 0px, transparent 50%),
-		radial-gradient(closest-corner at 64% 80%, rgb(0, 0, 0) 0px, transparent 50%);
-	height: 100vh;
-	width: 100vw;
-	overflow: hidden;
-} */
-
 #title {
-	/* font-size: var(--fs-xl); */
 	position: relative;
 	width: max-content;
 }

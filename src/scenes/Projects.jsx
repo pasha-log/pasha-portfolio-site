@@ -60,8 +60,8 @@ const Projects = () => {
 								>
 									Instapost API
 								</a>, which works together to create a social media website where users can share, like,
-								and comment on photos. Users can search for other users and follow them, and stay up to
-								date with posts that their friends have created.
+								comment, and crop photos. Users can search for other users and follow them, and stay up
+								to date with posts that their friends have created.
 							</p>
 							<ul className="flex flex-wrap items-center justify-center text-sm px-3">
 								<li className="mr-4">JavaScript</li>
@@ -112,7 +112,7 @@ const Projects = () => {
 									className="text-red hover:text-white no-underline"
 								>
 									Jobly API
-								</a>, which works together to create a fake job search site. Users can search and view
+								</a>, which works together to create a mock job search site. Users can search and view
 								different mock companies and jobs based on certain criteria, and "apply" to those jobs
 								with the click of a button.
 							</p>
