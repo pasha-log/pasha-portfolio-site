@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
 	content: [ './src/**/*.{html,js,jsx,ts,tsx}' ],
 	mode: 'jit',
@@ -28,8 +29,9 @@ module.exports = {
 				youtube: "url('/src/assets/youtube.svg')",
 				instagram: "url('/src/assets/instagram.svg')",
 				landingterminator: "url('/src/assets/pixel-terminator-1.png')",
-				abouttable: "url('/src/assets/colored-desk-2.png')",
-				arnold: "url('/src/assets/arnold.png')"
+				abouttable: "url('/src/assets/colored-desk.png')",
+				arnold: "url('/src/assets/arnold.png')",
+				nukedcity: "url('/src/assets/nuked-city.png')"
 			}
 		}
 	},

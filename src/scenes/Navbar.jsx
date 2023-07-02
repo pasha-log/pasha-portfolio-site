@@ -5,7 +5,6 @@ import { NavContext } from '../context/NavContext';
 
 const Navbar = () => {
 	const { activeLinkId } = useContext(NavContext);
-	// console.log(activeLinkId);
 	const navLinks = [ '00 Home', '01 About', '02 Projects', '03 Contact' ];
 
 	const renderNavLink = (content) => {
@@ -44,7 +43,7 @@ const Navbar = () => {
 							href="https://drive.google.com/file/d/18Yg-xQuzpUBNR953bKEzgcV6Svv8CEuC/view?usp=sharing"
 							className="p-1 bg-red font-semibold text-white hover:bg-black hover:text-white transition duration-500 no-underline"
 						>
-							RESUME
+							RESUMÉ
 						</a>
 					</div>
 				) : (
@@ -73,7 +72,7 @@ const Navbar = () => {
 								href="https://drive.google.com/file/d/18Yg-xQuzpUBNR953bKEzgcV6Svv8CEuC/view?usp=sharing"
 								className="p-1 w-28 place-self-center bg-red font-semibold text-white hover:bg-black hover:text-white transition duration-500 no-underline"
 							>
-								RESUME
+								RESUMÉ
 							</a>
 						</div>
 					</div>

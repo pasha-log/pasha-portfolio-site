@@ -18,8 +18,9 @@ const About = () => {
 					hidden: { opacity: 0, x: 50 },
 					visible: { opacity: 1, x: 0 }
 				}}
+				className="pt-10"
 			>
-				<h1 className="py-4 text-4xl">01. About me.</h1>
+				<h1 className="py-4 text-4xl text-center">01. About me.</h1>
 				<div className="grid grid-cols-1 md:grid-cols-2 items-center">
 					<div className="bg-abouttable place-self-center w-[35rem] h-[24rem] bg-contain md:w-auto md:h-[35rem] md:place-self-auto bg-center bg-no-repeat " />
 					<div className="p-8">
@@ -41,7 +42,7 @@ const About = () => {
 							ambitious, healthy, cooperative work environment. Here are a few of the technologies I've
 							been working with recently:
 						</p>
-						<div className="grid grid-cols-1 md:grid-cols-2 py-8">
+						<div className="grid grid-cols-1 md:grid-cols-2 py-8 text-center">
 							<ul id="tech">
 								<li key="1">JavaScript (ES6+)</li>
 								<li key="2">Node</li>

@@ -5,7 +5,11 @@ const Projects = () => {
 	const projectsRef = useNav('02 Projects');
 
 	return (
-		<section ref={projectsRef} className="bg-red text-white" id="02 projects">
+		<section
+			ref={projectsRef}
+			className="bg-no-repeat bg-bottom bg-nukedcity place-self-center bg-contain md:w-full md:place-self-auto bg-red text-white"
+			id="02 projects"
+		>
 			<motion.div
 				initial="hidden"
 				whileInView="visible"
@@ -17,8 +21,9 @@ const Projects = () => {
 					hidden: { opacity: 0, x: 50 },
 					visible: { opacity: 1, x: 0 }
 				}}
+				className="pt-20"
 			>
-				<h1 className="py-4 text-4xl">02. Some Things I've Built</h1>
+				<h1 className="py-4 text-4xl text-center">02. Some Things I've Built</h1>
 			</motion.div>
 
 			<div className="grid grid-cols-1 md:p-10">
@@ -189,6 +194,7 @@ const Projects = () => {
 						hidden: { opacity: 0, x: 50 },
 						visible: { opacity: 1, x: 0 }
 					}}
+					className="pb-40"
 				>
 					<div className="grid grid-cols-1 md:grid-cols-2 md:p-10 items-center">
 						<div className="pb-8 md:pt-8 md:pb-20 bg-black rounded m-2">

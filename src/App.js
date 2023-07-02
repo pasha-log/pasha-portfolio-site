@@ -1,4 +1,3 @@
-import './assets/App.css';
 import About from './scenes/About';
 import Projects from './scenes/Projects';
 import Landing from './scenes/Landing';
