@@ -1,5 +1,9 @@
 import useNav from '../hooks/useNav';
 import { motion } from 'framer-motion';
+import instapost from '../assets/instapost.png';
+import jobly from '../assets/jobly.png';
+import lightsout from '../assets/lights-out.png';
+import carbonprint from '../assets/carbon-print.png';
 
 const Projects = () => {
 	const projectsRef = useNav('02 Projects');
@@ -41,10 +45,13 @@ const Projects = () => {
 					}}
 				>
 					<div className="grid grid-cols-1 md:grid-cols-2 md:p-10 items-center">
-						<div
+						{/* <div
 							id="p1"
 							className="bg-instapost w-0 h-0 md:w-full md:h-full bg-center bg-contain bg-no-repeat md:pt-8 md:pb-20"
-						/>
+						/> */}
+						<div className="grid place-items-center items-center ">
+							<img className="w-0 md:w-[40rem] block" src={instapost} alt="instapost" />
+						</div>
 						<div className="pb-8 md:pt-8 md:pb-20 bg-black rounded m-2">
 							<div className="flex md:flex-row justify-center pt-4 px-4 md:px-0">
 								<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold mr-2">
@@ -56,6 +63,10 @@ const Projects = () => {
 								<a href="https://pasha-log-instapost.surge.sh/login">
 									<div className="p-2 bg-link w-11 md:w-12 h-11 md:h-12 bg-center" />
 								</a>
+							</div>
+
+							<div className="grid place-items-center items-center p-2 md:p-0">
+								<img className="w-[30rem] md:w-0 block" src={instapost} alt="instapost" />
 							</div>
 							<p className="mt-2 text-justify w-auto p-4 pt-4">
 								This application is a responsive React front end for my{' '}
@@ -110,6 +121,9 @@ const Projects = () => {
 									<div className="p-2 bg-link w-11 md:w-12 h-11 md:h-12 bg-center" />
 								</a>
 							</div>
+							<div className="grid place-items-center items-center p-2 md:p-0">
+								<img className="w-[30rem] md:w-0 block" src={jobly} alt="jobly" />
+							</div>
 							<p className="mt-2 text-justify w-auto p-4 pt-4">
 								This application is a responsive React front end for my{' '}
 								<a
@@ -132,10 +146,13 @@ const Projects = () => {
 								<li className="mr-4">Heroku</li>
 							</ul>
 						</div>
-						<div
+						{/* <div
 							id="p2"
 							className="bg-jobly w-0 h-0 md:w-full md:h-full bg-center bg-contain bg-no-repeat md:pt-8 md:pb-20"
-						/>
+						/> */}
+						<div className="grid place-items-center items-center ">
+							<img className="w-0 md:w-[40rem] block" src={jobly} alt="jobly" />
+						</div>
 					</div>
 				</motion.div>
 				{/** LIGHTS OUT */}
@@ -152,10 +169,13 @@ const Projects = () => {
 					}}
 				>
 					<div className="grid grid-cols-1 md:grid-cols-2 md:p-10 items-center">
-						<div
+						{/* <div
 							id="p3"
 							className="bg-lightsout w-0 h-0 md:w-full md:h-full bg-center bg-contain bg-no-repeat md:pt-8 md:pb-20"
-						/>
+						/> */}
+						<div className="grid place-items-center items-center ">
+							<img className="w-0 md:w-[40rem] block" src={lightsout} alt="lightsout" />
+						</div>
 						<div className="pb-8 md:pt-8 md:pb-20 bg-black rounded m-2">
 							<div className="flex md:flex-row justify-center pt-4 px-4 md:px-0">
 								<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold mr-2">
@@ -167,6 +187,9 @@ const Projects = () => {
 								<a href="https://pasha-log.github.io/react-lights-out/">
 									<div className="p-2 bg-link w-11 md:w-12 h-11 md:h-12 bg-center" />
 								</a>
+							</div>
+							<div className="grid place-items-center items-center p-2 md:p-0">
+								<img className="w-[30rem] md:w-0 block" src={lightsout} alt="lightsout" />
 							</div>
 							<p className="mt-2 text-justify w-auto bg-black p-4 rounded">
 								A fun, but tricky game. On each render, the board has a random assortment of lit and
@@ -209,6 +232,9 @@ const Projects = () => {
 									<div className="p-2 bg-link w-11 md:w-12 h-11 md:h-12 bg-center" />
 								</a>
 							</div>
+							<div className="grid place-items-center items-center p-2 md:p-0">
+								<img className="w-[30rem] md:w-0 block" src={carbonprint} alt="carbonprint" />
+							</div>
 							<p className="mt-2 text-justify w-auto p-4">
 								Users are able to create an account and have four forms to choose from: vehicles,
 								shipping, flights, and electricity. This application stores your emissions in a SQL
@@ -232,10 +258,13 @@ const Projects = () => {
 								<li className="mr-4">Heroku</li>
 							</ul>
 						</div>
-						<div
+						{/* <div
 							id="p4"
 							className="bg-carbonprint w-0 h-0 md:w-full md:h-full bg-center bg-contain bg-no-repeat md:pt-8 md:pb-20"
-						/>
+						/> */}
+						<div className="grid place-items-center items-center ">
+							<img className="w-0 md:w-[40rem] block" src={carbonprint} alt="carbonprint" />
+						</div>
 					</div>
 				</motion.div>
 			</div>
