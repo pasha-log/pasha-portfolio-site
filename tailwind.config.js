@@ -7,7 +7,8 @@ module.exports = {
 		colors: {
 			white: '#ffffff',
 			red: '#ff0000',
-			black: '#000000'
+			black: '#000000',
+			green: '#00ff00'
 		},
 		screens: {
 			xs: '480px',
@@ -31,7 +32,8 @@ module.exports = {
 				landingterminator: "url('/src/assets/pixel-terminator-1.png')",
 				abouttable: "url('/src/assets/colored-desk.png')",
 				arnold: "url('/src/assets/arnold.png')",
-				nukedcity: "url('/src/assets/nuked-city.png')"
+				nukedcity: "url('/src/assets/nuked-city.png')",
+				eye: "url('/src/assets/terminator-eye.png')"
 			}
 		}
 	},

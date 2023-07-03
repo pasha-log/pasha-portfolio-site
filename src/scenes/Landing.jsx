@@ -1,13 +1,48 @@
+import { useState, useRef, useEffect } from 'react';
 import '../assets/Landing.css';
 import SocialMediaIcons from '../components/SocialMediaIcons';
 import useNav from '../hooks/useNav';
 import { motion } from 'framer-motion';
+import MovingEyes from '../components/MovingEyes';
 
 const Landing = () => {
+	const ref = useRef(null);
+	let [ mouseX, setMouseX ] = useState();
+	let [ mouseY, setMouseY ] = useState();
+	let [ angleDegree, setAngleDegree ] = useState();
+
+	useEffect(
+		() => {
+			function angle(cx, cy, ex, ey) {
+				const dy = ey - cy;
+				const dx = ex - cx;
+				const radians = Math.atan2(dy, dx);
+				const degree = radians * 180 / Math.PI;
+				return degree;
+			}
+			const rekt = ref.current.getBoundingClientRect();
+			const anchorX = rekt.left + rekt.width / 2;
+			const anchorY = rekt.top + rekt.height / 2;
+
+			return () => {
+				setAngleDegree(angle(mouseX, mouseY, anchorX, anchorY));
+			};
+		},
+		[ mouseX, mouseY ]
+	);
+
 	const homeRef = useNav('00 Home');
 
 	return (
-		<div ref={homeRef} id="00 home" className="bg-gradient-to-t from-red via-black to-black ">
+		<div
+			onMouseMove={(e) => {
+				setMouseX(e.clientX);
+				setMouseY(e.clientY);
+			}}
+			ref={homeRef}
+			id="00 home"
+			className="bg-gradient-to-t from-red via-black to-black"
+		>
 			<div id="container" className="grid grid-cols-1 md:grid-cols-2 items-center md:items-start">
 				<div className="mt-40 grid place-content-center text-center">
 					<h1 id="title" className="text-lg md:text-4xl md:mt-40 text-white ">
@@ -42,9 +77,9 @@ const Landing = () => {
 						hidden: { opacity: 0, x: 50 },
 						visible: { opacity: 1, x: 0 }
 					}}
-					className="flex md:grid bottom-0"
+					className="grid md:mt-40 place-items-center items-center"
 				>
-					<div className="flex bg-landingterminator place-self-center w-[35rem] h-[24rem] bg-contain md:w-auto md:h-[35rem] md:place-self-auto md:mt-40 bg-center bg-no-repeat" />
+					<MovingEyes reference={ref} angleDegree={angleDegree} />
 				</motion.div>
 			</div>
 		</div>
