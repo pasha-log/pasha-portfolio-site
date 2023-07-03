@@ -54,14 +54,14 @@ const Projects = () => {
 						</div>
 						<div className="pb-8 md:pt-8 md:pb-20 bg-black rounded m-2">
 							<div className="flex md:flex-row justify-center pt-4 px-4 md:px-0">
-								<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold mr-2">
+								<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold mx-3">
 									Instapost (An Instagram Mock)
 								</h2>
 								<a href="https://github.com/pasha-log/capstone2-frontend">
 									<div className="p-2 bg-github w-10 md:w-11 h-10 md:h-11 bg-no-repeat bg-contain" />
 								</a>
 								<a href="https://pasha-log-instapost.surge.sh/login">
-									<div className="p-2 bg-link w-11 md:w-12 h-11 md:h-12 bg-center" />
+									<div className="p-2 bg-link w-11 md:w-12 h-11 md:h-12 bg-center bg-no-repeat" />
 								</a>
 							</div>
 
@@ -118,7 +118,7 @@ const Projects = () => {
 									<div className="p-2 bg-github w-10 md:w-11 h-10 md:h-11 bg-no-repeat bg-contain" />
 								</a>
 								<a href="https://pasha-jobly.surge.sh/">
-									<div className="p-2 bg-link w-11 md:w-12 h-11 md:h-12 bg-center" />
+									<div className="p-2 bg-link w-11 md:w-12 h-11 md:h-12 bg-center bg-no-repeat" />
 								</a>
 							</div>
 							<div className="grid place-items-center items-center p-2 md:p-0">
@@ -185,7 +185,7 @@ const Projects = () => {
 									<div className="p-2 bg-github w-10 md:w-11 h-10 md:h-11 bg-no-repeat bg-contain" />
 								</a>
 								<a href="https://pasha-log.github.io/react-lights-out/">
-									<div className="p-2 bg-link w-11 md:w-12 h-11 md:h-12 bg-center" />
+									<div className="p-2 bg-link w-11 md:w-12 h-11 md:h-12 bg-center bg-no-repeat" />
 								</a>
 							</div>
 							<div className="grid place-items-center items-center p-2 md:p-0">
@@ -222,14 +222,14 @@ const Projects = () => {
 					<div className="grid grid-cols-1 md:grid-cols-2 md:p-10 items-center">
 						<div className="pb-8 md:pt-8 md:pb-20 bg-black rounded m-2">
 							<div className="flex md:flex-row justify-center pt-4 px-4 md:px-0">
-								<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold mr-2">
+								<h2 className="text-base md:text-3xl pt-2 md:pt-1 font-extrabold mx-3">
 									Carbon Footprint Calculator
 								</h2>
 								<a href="https://github.com/pasha-log/capstone1">
 									<div className="p-2 bg-github w-10 md:w-11 h-10 md:h-11 bg-no-repeat bg-contain" />
 								</a>
 								<a href="https://carbonprint.herokuapp.com/">
-									<div className="p-2 bg-link w-11 md:w-12 h-11 md:h-12 bg-center" />
+									<div className="p-2 bg-link w-11 md:w-12 h-11 md:h-12 bg-center bg-no-repeat" />
 								</a>
 							</div>
 							<div className="grid place-items-center items-center p-2 md:p-0">
