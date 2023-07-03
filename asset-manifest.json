@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pasha-portfolio-site/static/css/main.d0c9a5e1.css",
-    "main.js": "/pasha-portfolio-site/static/js/main.b8b5d103.js",
+    "main.css": "/pasha-portfolio-site/static/css/main.c5f92b5d.css",
+    "main.js": "/pasha-portfolio-site/static/js/main.125d6f34.js",
     "static/media/jobly.png": "/pasha-portfolio-site/static/media/jobly.6dc93ee4c377b45dd8bd.png",
     "static/media/instapost.png": "/pasha-portfolio-site/static/media/instapost.84992b3b05c84ce288f2.png",
     "static/media/carbon-print.png": "/pasha-portfolio-site/static/media/carbon-print.fc8b38c27397c2260b82.png",
@@ -18,11 +18,11 @@
     "static/media/link.svg": "/pasha-portfolio-site/static/media/link.3ff6226c3aa915d50fec.svg",
     "static/media/icon-hamburger-close.svg": "/pasha-portfolio-site/static/media/icon-hamburger-close.08233535a9321b39bf5f.svg",
     "static/media/icon-hamburger.svg": "/pasha-portfolio-site/static/media/icon-hamburger.113d59e2703636dfe157.svg",
-    "main.d0c9a5e1.css.map": "/pasha-portfolio-site/static/css/main.d0c9a5e1.css.map",
-    "main.b8b5d103.js.map": "/pasha-portfolio-site/static/js/main.b8b5d103.js.map"
+    "main.c5f92b5d.css.map": "/pasha-portfolio-site/static/css/main.c5f92b5d.css.map",
+    "main.125d6f34.js.map": "/pasha-portfolio-site/static/js/main.125d6f34.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0c9a5e1.css",
-    "static/js/main.b8b5d103.js"
+    "static/css/main.c5f92b5d.css",
+    "static/js/main.125d6f34.js"
   ]
 }
