@@ -8,7 +8,8 @@ module.exports = {
 			white: '#ffffff',
 			red: '#ff0000',
 			black: '#000000',
-			green: '#00ff00'
+			green: '#00ff00',
+			yellow: '#ffff00'
 		},
 		screens: {
 			xs: '480px',

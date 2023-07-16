@@ -1,12 +1,13 @@
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import useNav from '../hooks/useNav';
+import React from 'react';
 
-const Contact = () => {
+const Contact: React.FC = (): JSX.Element => {
 	const contactRef = useNav('03 Contact');
 	const { register, trigger, formState: { errors } } = useForm();
 
-	const onSubmit = async (e) => {
+	const onSubmit = async (e: any) => {
 		console.log('~ e', e);
 		const isValid = await trigger();
 		if (!isValid) {
@@ -15,7 +16,7 @@ const Contact = () => {
 	};
 
 	return (
-		<section ref={contactRef} id="03 contact" className="contact py-24 bg-black px-8">
+		<div ref={contactRef} id="03 contact" className="contact py-24 bg-black px-8">
 			{/* HEADINGS */}
 			<motion.div
 				initial="hidden"
@@ -111,10 +112,10 @@ const Contact = () => {
 
 						<textarea
 							className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-							name="message"
+							// name="message"
 							placeholder="MESSAGE"
-							rows="4"
-							cols="50"
+							rows={4}
+							cols={50}
 							{...register('message', {
 								required: true,
 								maxLength: 2000
@@ -136,7 +137,7 @@ const Contact = () => {
 					</form>
 				</motion.div>
 			</div>
-		</section>
+		</div>
 	);
 };
 

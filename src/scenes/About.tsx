@@ -1,4 +1,4 @@
-import '../assets/About.css';
+import '../styles/About.css';
 import useNav from '../hooks/useNav';
 // import { motion } from 'framer-motion';
 
@@ -6,7 +6,7 @@ const About = () => {
 	const aboutRef = useNav('01 About');
 
 	return (
-		<section ref={aboutRef} className="bg-black text-white" id="01 about">
+		<div ref={aboutRef} className="bg-black text-white " id="01 about">
 			{/* <motion.div
 				initial="hidden"
 				whileInView="visible"
@@ -20,7 +20,7 @@ const About = () => {
 				}}
 				className="pt-10"
 			> */}
-			<h1 className="py-4 text-4xl text-center pt-10">01. About me.</h1>
+			<h1 className="py-4 text-4xl text-center pt-20">01. About me.</h1>
 			<div className="grid grid-cols-1 md:grid-cols-2 items-center pb-10">
 				<div className="bg-abouttable place-self-center w-[35rem] h-[24rem] bg-contain md:w-auto md:h-[35rem] md:place-self-auto bg-center bg-no-repeat " />
 				<div className="p-8">
@@ -60,7 +60,7 @@ const About = () => {
 				</div>
 			</div>
 			{/* </motion.div> */}
-		</section>
+		</div>
 	);
 };
 

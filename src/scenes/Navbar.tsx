@@ -1,17 +1,18 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import useMediaQuery from '../hooks/useMediaQuery';
 import { useContext } from 'react';
 import { NavContext } from '../context/NavContext';
 
-const Navbar = () => {
+const Navbar: React.FC = (): JSX.Element => {
 	const { activeLinkId } = useContext(NavContext);
-	const navLinks = [ '00 Home', '01 About', '02 Projects', '03 Contact' ];
+	const navLinks: Array<string> = [ '00 Home', '01 About', '02 Projects', '03 Contact' ];
 
-	const renderNavLink = (content) => {
+
+	const renderNavLink = (content: string) => {
 		const scrollToId = `${content.toLowerCase()}`;
 
 		const handleClickNav = () => {
-			document.getElementById(scrollToId).scrollIntoView({ behavior: 'smooth' });
+			document.getElementById(scrollToId)!.scrollIntoView({ behavior: 'smooth' });
 		};
 
 		return (
@@ -38,9 +39,9 @@ const Navbar = () => {
 				{/** DESKTOP NAV */}
 				{isAboveSmallScreens ? (
 					<div className="flex justfiy-between items-center gap-16 text-sm font-semibold">
-						{navLinks.map((nav) => renderNavLink(nav))}
+						{navLinks.map((nav: string) => renderNavLink(nav))}
 						<a
-							href="https://drive.google.com/file/d/18Yg-xQuzpUBNR953bKEzgcV6Svv8CEuC/view?usp=sharing"
+							href="https://drive.google.com/file/d/1Vyxki2Roc1-ZSNdVHiaTZu8-Va8BKSSF/view?usp=sharing"
 							className="p-1 text-center bg-red font-semibold text-white hover:bg-black hover:text-white transition duration-500 no-underline"
 						>
 							RESUMÉ
@@ -69,7 +70,7 @@ const Navbar = () => {
 						<div className="flex flex-col gap-10 ml-[10%] text=2xl text-red">
 							{navLinks.map((nav) => renderNavLink(nav))}
 							<a
-								href="https://drive.google.com/file/d/18Yg-xQuzpUBNR953bKEzgcV6Svv8CEuC/view?usp=sharing"
+								href="https://drive.google.com/file/d/1Vyxki2Roc1-ZSNdVHiaTZu8-Va8BKSSF/view?usp=sharing"
 								className="p-1 w-28 place-self-center text-center bg-red font-semibold text-white hover:bg-black hover:text-white transition duration-500 no-underline"
 							>
 								RESUMÉ

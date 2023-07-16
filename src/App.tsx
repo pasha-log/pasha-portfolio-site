@@ -1,3 +1,4 @@
+import React from 'react';
 import About from './scenes/About';
 import Projects from './scenes/Projects';
 import Landing from './scenes/Landing';
@@ -6,7 +7,7 @@ import Footer from './scenes/Footer';
 import Navbar from './scenes/Navbar';
 import NavProvider from './context/NavContext';
 
-function App() {
+const App: React.FC = () => {
 	return (
 		<div className="App">
 			<NavProvider>

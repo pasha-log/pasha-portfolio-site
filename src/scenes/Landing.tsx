@@ -1,19 +1,19 @@
-import { useState, useRef, useEffect } from 'react';
-import '../assets/Landing.css';
+import React, { useState, useRef, useEffect } from 'react';
+import '../styles/Landing.css';
 import SocialMediaIcons from '../components/SocialMediaIcons';
 import useNav from '../hooks/useNav';
 import { motion } from 'framer-motion';
 import MovingEyes from '../components/MovingEyes';
 
-const Landing = () => {
-	const ref = useRef(null);
-	let [ mouseX, setMouseX ] = useState();
-	let [ mouseY, setMouseY ] = useState();
-	let [ angleDegree, setAngleDegree ] = useState();
+const Landing: React.FC = (): JSX.Element => {
+	const ref = useRef<HTMLImageElement>(null!);
+	let [ mouseX, setMouseX ] = useState<number>(undefined!);
+	let [ mouseY, setMouseY ] = useState<number>(undefined!);
+	let [ angleDegree, setAngleDegree ] = useState<number>(undefined!);
 
 	useEffect(
 		() => {
-			function angle(cx, cy, ex, ey) {
+			function angle(cx: number, cy: number, ex: number, ey: number) {
 				const dy = ey - cy;
 				const dx = ex - cx;
 				const radians = Math.atan2(dy, dx);
@@ -45,7 +45,7 @@ const Landing = () => {
 		>
 			<div id="container" className="grid grid-cols-1 md:grid-cols-2 items-center md:items-start">
 				<div className="mt-40 grid place-content-center text-center">
-					<h1 id="title" className="text-lg md:text-4xl md:mt-40 text-white ">
+					<h1 id="title" className="text-lg md:text-5xl md:mt-40 text-white">
 						Hello, I'm Pasha Loguinov
 					</h1>
 					<motion.div
@@ -77,7 +77,7 @@ const Landing = () => {
 						hidden: { opacity: 0, x: 50 },
 						visible: { opacity: 1, x: 0 }
 					}}
-					className="grid md:mt-40 place-items-center items-center"
+					className="grid md:mt-40 place-items-center items-center "
 				>
 					<MovingEyes reference={ref} angleDegree={angleDegree} />
 				</motion.div>

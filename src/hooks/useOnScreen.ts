@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const useOnScreen = (ref) => {
+const useOnScreen = (ref: any) => {
 	const [ isOnScreen, setIsOnScreen ] = useState(false);
 
 	const observer = new IntersectionObserver(

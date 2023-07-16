@@ -2,7 +2,7 @@
 // Pass a query, and this hook will tell us exactly when it particularly matches a particular breakpoint.
 import { useState, useEffect } from "react";
 
-const useMediaQuery = (query) => {
+const useMediaQuery = (query: string) => {
     const [matches, setMatches] = useState(false);
 
     useEffect(()=> {
