@@ -9,6 +9,11 @@
 	a {
 		font-family: 'Orbitron', sans-serif;
 	}
+	#ProjectDescription,
+	#AboutParagraph,
+	#AboutParagraph a {
+		font-family: 'Play', sans-serif;
+	}
 }
 
 html,

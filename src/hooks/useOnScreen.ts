@@ -8,7 +8,7 @@ const useOnScreen = (ref: any) => {
 			setIsOnScreen(entry.isIntersecting);
 		},
 		{
-			threshold: 0.3
+			threshold: 0.2
 		}
 	);
 

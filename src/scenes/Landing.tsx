@@ -45,7 +45,7 @@ const Landing: React.FC = (): JSX.Element => {
 		>
 			<div id="container" className="grid grid-cols-1 md:grid-cols-2 items-center md:items-start">
 				<div className="mt-40 grid place-content-center text-center">
-					<h1 id="title" className="text-lg md:text-5xl md:mt-36 text-white">
+					<h1 id="title" className="text-lg md:text-4xl md:mt-36 text-white">
 						Hello, I'm Pasha Loguinov
 					</h1>
 					<motion.div

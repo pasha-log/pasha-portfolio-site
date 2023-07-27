@@ -42,7 +42,7 @@ const ProjectInfo: React.FC<props> = ({project}): JSX.Element => {
                     <div className="grid place-items-center items-center p-2 md:p-0">
                         <img className="w-[30rem] md:w-0 block" src={project.image} alt={project.alt} />
                     </div>
-                    <p className="mt-2 text-justify w-auto p-4 pt-4">
+                    <p className="mt-2 text-justify w-auto p-4 pt-4 text-xl" id='ProjectDescription'>
                         {project.description}
                     </p>
                     <ul className="flex flex-wrap items-center justify-center text-sm px-3">

@@ -24,7 +24,7 @@ const About = () => {
 			<div className="grid grid-cols-1 md:grid-cols-2 items-center pb-10">
 				<div className="bg-abouttable place-self-center w-[35rem] h-[24rem] bg-contain md:w-auto md:h-[35rem] md:place-self-auto bg-center bg-no-repeat " />
 				<div className="p-8">
-					<p className="mt-2 text-justify w-auto">
+					<p className="mt-2 text-justify w-auto text-2xl" id='AboutParagraph'>
 						Hello! My name is Pasha, and I am a first generation Russian American graphic artist and web
 						developer who is clearly not obsessed with sci-fi. My interest in software engineering was
 						sparked in 2022 when I started{' '}
