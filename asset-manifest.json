@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/pasha-portfolio-site/static/css/main.d9e02d45.css",
-    "main.js": "/pasha-portfolio-site/static/js/main.49527fa2.js",
-    "static/media/jobly.png": "/pasha-portfolio-site/static/media/jobly.6dc93ee4c377b45dd8bd.png",
-    "static/media/instapost.png": "/pasha-portfolio-site/static/media/instapost.84992b3b05c84ce288f2.png",
-    "static/media/carbon-print.png": "/pasha-portfolio-site/static/media/carbon-print.fc8b38c27397c2260b82.png",
-    "static/media/lights-out.png": "/pasha-portfolio-site/static/media/lights-out.381d05176f3ce45215c9.png",
-    "static/media/nuked-city.png": "/pasha-portfolio-site/static/media/nuked-city.04fdcd88b3285ec2afa0.png",
-    "static/media/colored-desk.png": "/pasha-portfolio-site/static/media/colored-desk.aa2328c07f23b7f6baa3.png",
-    "static/media/arnold.png": "/pasha-portfolio-site/static/media/arnold.6fa78b26cafdb5ea0029.png",
-    "static/media/pixel-terminator-1.png": "/pasha-portfolio-site/static/media/pixel-terminator-1.ec09df616a3c89d90986.png",
-    "static/media/youtube.svg": "/pasha-portfolio-site/static/media/youtube.bb9cf29802f94e76f595.svg",
-    "static/media/instagram.svg": "/pasha-portfolio-site/static/media/instagram.e431503035242751d472.svg",
-    "static/media/linkedin.svg": "/pasha-portfolio-site/static/media/linkedin.9aad009b34614efd0af1.svg",
-    "index.html": "/pasha-portfolio-site/index.html",
-    "static/media/github-mark.svg": "/pasha-portfolio-site/static/media/github-mark.1dc5ab12ef3fc81720b0.svg",
-    "static/media/link.svg": "/pasha-portfolio-site/static/media/link.3ff6226c3aa915d50fec.svg",
-    "static/media/icon-hamburger-close.svg": "/pasha-portfolio-site/static/media/icon-hamburger-close.08233535a9321b39bf5f.svg",
-    "static/media/icon-hamburger.svg": "/pasha-portfolio-site/static/media/icon-hamburger.113d59e2703636dfe157.svg",
-    "main.d9e02d45.css.map": "/pasha-portfolio-site/static/css/main.d9e02d45.css.map",
-    "main.49527fa2.js.map": "/pasha-portfolio-site/static/js/main.49527fa2.js.map"
+    "main.css": "/static/css/main.9bccb365.css",
+    "main.js": "/static/js/main.794b3daa.js",
+    "static/media/jobly.png": "/static/media/jobly.6dc93ee4c377b45dd8bd.png",
+    "static/media/instapost.png": "/static/media/instapost.84992b3b05c84ce288f2.png",
+    "static/media/carbon-print.png": "/static/media/carbon-print.fc8b38c27397c2260b82.png",
+    "static/media/lights-out.png": "/static/media/lights-out.381d05176f3ce45215c9.png",
+    "static/media/nuked-city.png": "/static/media/nuked-city.04fdcd88b3285ec2afa0.png",
+    "static/media/colored-desk.png": "/static/media/colored-desk.aa2328c07f23b7f6baa3.png",
+    "static/media/arnold.png": "/static/media/arnold.6fa78b26cafdb5ea0029.png",
+    "static/media/pixel-terminator-1.png": "/static/media/pixel-terminator-1.ec09df616a3c89d90986.png",
+    "static/media/youtube.svg": "/static/media/youtube.bb9cf29802f94e76f595.svg",
+    "static/media/instagram.svg": "/static/media/instagram.e431503035242751d472.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.9aad009b34614efd0af1.svg",
+    "static/media/github-mark.svg": "/static/media/github-mark.1dc5ab12ef3fc81720b0.svg",
+    "static/media/link.svg": "/static/media/link.3ff6226c3aa915d50fec.svg",
+    "index.html": "/index.html",
+    "static/media/icon-hamburger-close.svg": "/static/media/icon-hamburger-close.08233535a9321b39bf5f.svg",
+    "static/media/icon-hamburger.svg": "/static/media/icon-hamburger.113d59e2703636dfe157.svg",
+    "main.9bccb365.css.map": "/static/css/main.9bccb365.css.map",
+    "main.794b3daa.js.map": "/static/js/main.794b3daa.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9e02d45.css",
-    "static/js/main.49527fa2.js"
+    "static/css/main.9bccb365.css",
+    "static/js/main.794b3daa.js"
   ]
 }
